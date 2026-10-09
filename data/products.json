@@ -1,0 +1,5 @@
+[
+  {"id":1,"name":"Baguette traditionnelle","price":"1.20","desc":"Cuite sur pierre, croûte dorée."},
+  {"id":2,"name":"Pain au levain","price":"3.50","desc":"Levain naturel, mie aérée."},
+  {"id":3,"name":"Croissant pur beurre","price":"1.50","desc":"Beurre AOP, feuilletage léger."}
+]
