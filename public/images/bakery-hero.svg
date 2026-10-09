@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f8f0e8"/>
+      <stop offset="100%" stop-color="#f3d9b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="720" fill="url(#bg)"/>
+  <rect x="80" y="90" width="740" height="540" rx="28" fill="#f5f0eb"/>
+  <rect x="120" y="150" width="240" height="180" rx="26" fill="#dca46a" opacity="0.2"/>
+  <rect x="390" y="150" width="390" height="210" rx="30" fill="#fffefc"/>
+  <path d="M160 460c40-110 100-160 180-160s140 52 180 160z" fill="#d39252"/>
+  <path d="M230 430c40-90 82-130 140-130s100 40 140 130z" fill="#f0c58c"/>
+  <path d="M486 250c0-42 34-76 76-76s76 34 76 76-34 76-76 76-76-34-76-76z" fill="#ea7625" opacity="0.85"/>
+  <path d="M500 250c0-42 34-76 76-76s76 34 76 76-34 76-76 76-76-34-76-76z" fill="#f7d0a1" opacity="0.7"/>
+  <path d="M120 520h660" stroke="#c79b67" stroke-width="14" stroke-linecap="round"/>
+  <text x="140" y="585" font-size="40" font-family="Georgia, serif" fill="#484b52">La Rhônelle</text>
+  <text x="140" y="635" font-size="22" font-family="Georgia, serif" fill="#5f4f45">Pain frais • viennoiseries • pâtisseries</text>
+</svg>

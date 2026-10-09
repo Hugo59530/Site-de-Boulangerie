@@ -1,0 +1,75 @@
+<%- include('../partials/header') %>
+<main class="container page-shell gallery">
+  <p class="eyebrow">Galerie</p>
+  <h1>Des produits faits pour être admirés</h1>
+
+  <div class="gallery-carousel" aria-label="Carrousel de la galerie">
+    <button type="button" class="carousel-btn prev" aria-label="Image précédente">&#10094;</button>
+
+    <div class="carousel-track">
+      <figure class="carousel-slide active">
+        <img src="/images/Boulangerie.jpg" alt="Boulangerie La Rhônelle" />
+        <figcaption>La boutique au cœur du quartier</figcaption>
+      </figure>
+      <figure class="carousel-slide">
+        <img src="/images/vitrine.jpg" alt="Vitrine de la boulangerie" />
+        <figcaption>Une vitrine qui met en valeur les douceurs</figcaption>
+      </figure>
+      <figure class="carousel-slide">
+        <img src="/images/10258_6.jpg" alt="Pâtisseries et produits" />
+        <figcaption>Des pâtisseries gourmandes et soigneusement préparées</figcaption>
+      </figure>
+      <figure class="carousel-slide">
+        <img src="/images/Boulangerie.jpg" alt="Vue boulangerie" />
+        <figcaption>Un lieu chaleureux et authentique</figcaption>
+      </figure>
+      <figure class="carousel-slide">
+        <img src="/images/logo.svg" alt="Logo La Rhônelle" />
+        <figcaption>La Rhônelle, une identité simple et reconnaissable</figcaption>
+      </figure>
+    </div>
+
+    <button type="button" class="carousel-btn next" aria-label="Image suivante">&#10095;</button>
+  </div>
+
+  <div class="carousel-dots" aria-label="Navigation du carrousel">
+    <button type="button" class="dot active" aria-label="Aller à l'image 1"></button>
+    <button type="button" class="dot" aria-label="Aller à l'image 2"></button>
+    <button type="button" class="dot" aria-label="Aller à l'image 3"></button>
+    <button type="button" class="dot" aria-label="Aller à l'image 4"></button>
+    <button type="button" class="dot" aria-label="Aller à l'image 5"></button>
+  </div>
+</main>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  const dots = Array.from(document.querySelectorAll('.dot'));
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    currentIndex = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('active', slideIndex === currentIndex);
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('active', dotIndex === currentIndex);
+      dot.setAttribute('aria-current', dotIndex === currentIndex ? 'true' : 'false');
+    });
+  }
+
+  prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+  nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showSlide(index));
+  });
+
+  setInterval(() => showSlide(currentIndex + 1), 4000);
+</script>
+
+<%- include('../partials/footer') %>

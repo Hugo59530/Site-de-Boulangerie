@@ -1,0 +1,48 @@
+<%- include('../partials/header') %>
+<main class="container page-shell">
+  <div class="dashboard-header">
+    <div>
+      <p class="eyebrow">Espace client</p>
+      <h1>Bonjour <%= user.username %></h1>
+    </div>
+  </div>
+
+  <div class="dashboard-grid">
+    <section class="card">
+      <h3>Passer une commande</h3>
+      <form action="/orders" method="post" class="order-form">
+        <label>
+          Produit
+          <input type="text" name="product_name" placeholder="Ex : Baguette, croissant..." required>
+        </label>
+        <label>
+          Quantité
+          <input type="number" name="quantity" min="1" value="1" required>
+        </label>
+        <label>
+          Notes
+          <textarea name="notes" placeholder="Informations supplémentaires..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Commander</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h3>Mes commandes</h3>
+      <% if (!orders || orders.length === 0) { %>
+        <p>Aucune commande pour le moment.</p>
+      <% } else { %>
+        <ul class="stack-list">
+          <% orders.forEach(order => { %>
+            <li>
+              <strong><%= order.product_name %></strong>
+              <span>× <%= order.quantity %></span>
+              <small><%= order.status %></small>
+            </li>
+          <% }) %>
+        </ul>
+      <% } %>
+    </section>
+  </div>
+</main>
+<%- include('../partials/footer') %>

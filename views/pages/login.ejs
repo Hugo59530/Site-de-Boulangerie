@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+<main class="container page-shell">
+  <div class="auth-card">
+    <h1>Connexion</h1>
+    <% if (error) { %>
+      <p class="error-message"><%= error %></p>
+    <% } %>
+    <form action="/login" method="post" class="auth-form">
+      <label>
+        Nom d’utilisateur
+        <input type="text" name="username" required>
+      </label>
+      <label>
+        Mot de passe
+        <input type="password" name="password" required>
+      </label>
+      <button type="submit" class="btn btn-primary">Se connecter</button>
+    </form>
+    <p class="auth-switch">Pas encore de compte ? <a href="/register">Créer un compte client</a></p>
+  </div>
+</main>
+<%- include('../partials/footer') %>

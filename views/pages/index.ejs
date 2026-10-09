@@ -1,0 +1,160 @@
+<%- include('../partials/header') %>
+
+<main>
+  <section id="accueil" class="hero container">
+    <div class="hero-copy">
+      <p class="eyebrow">Boulangerie artisanale</p>
+      <h1>La Rhônelle</h1>
+      <p class="lead">Une boulangerie chaleureuse où le pain se prépare chaque matin avec soin, la pâte s’étire lentement et les produits sont faits pour être partagés.</p>
+    </div>
+    <div class="hero-visual">
+      <img src="/images/Boulangerie.jpg" alt="Pains et viennoiseries de La Rhônelle" />
+    </div>
+  </section>
+
+  <section class="highlights container">
+    <article>
+      <h3>Pain au levain</h3>
+      <p>Préparé naturellement, avec une mie aérée et une croûte croustillante.</p>
+    </article>
+    <article>
+      <h3>Viennoiseries</h3>
+      <p>Croissants, pains au chocolat et brioches réalisés chaque jour.</p>
+    </article>
+    <article>
+      <h3>Gâteaux maison</h3>
+      <p>Des créations gourmandes pensées pour les pauses et les fêtes.</p>
+    </article>
+  </section>
+
+  <section id="about" class="story container">
+    <div class="story-image">
+      <img src="/images/vitrine.jpg" alt="Intérieur de la boulangerie" />
+    </div>
+    <div class="story-text">
+      <p class="eyebrow">La maison</p>
+      <h2>Un lieu de tradition, de douceur et de bon accueil</h2>
+      <p>Chez La Rhônelle, la boulangerie repose sur des recettes simples, des matières premières soigneusement sélectionnées et un savoir-faire artisanal. Nous aimons accueillir les voisins, les familles et les gourmands avec une vraie attention à chaque détail.</p>
+      <p>Chaque matin, nous façonnons des pains, viennoiseries et pâtisseries qui donnent envie d’y revenir.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="container page-shell gallery">
+    <p class="eyebrow">Galerie</p>
+    <h1>Des produits faits pour être admirés</h1>
+
+    <div class="gallery-carousel" aria-label="Carrousel de la galerie">
+      <button type="button" class="carousel-btn prev" aria-label="Image précédente">&#10094;</button>
+
+      <div class="carousel-track">
+        <figure class="carousel-slide active">
+          <img src="/images/Boulangerie.jpg" alt="Boulangerie La Rhônelle" />
+          <figcaption>La boutique au cœur du quartier</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="/images/vitrine.jpg" alt="Vitrine de la boulangerie" />
+          <figcaption>Une vitrine qui met en valeur les douceurs</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="/images/10258_6.jpg" alt="Pâtisseries et produits" />
+          <figcaption>Des pâtisseries gourmandes et soigneusement préparées</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="/images/Boulangerie.jpg" alt="Vue boulangerie" />
+          <figcaption>Un lieu chaleureux et authentique</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <img src="/images/logo.svg" alt="Logo La Rhônelle" />
+          <figcaption>La Rhônelle, une identité simple et reconnaissable</figcaption>
+        </figure>
+      </div>
+
+      <button type="button" class="carousel-btn next" aria-label="Image suivante">&#10095;</button>
+    </div>
+
+    <div class="carousel-dots" aria-label="Navigation du carrousel">
+      <button type="button" class="dot active" aria-label="Aller à l'image 1"></button>
+      <button type="button" class="dot" aria-label="Aller à l'image 2"></button>
+      <button type="button" class="dot" aria-label="Aller à l'image 3"></button>
+      <button type="button" class="dot" aria-label="Aller à l'image 4"></button>
+      <button type="button" class="dot" aria-label="Aller à l'image 5"></button>
+    </div>
+  </section>
+
+  <section class="container facebook-feed-section">
+    <div class="section-heading">
+      <p class="eyebrow">Suivez-nous</p>
+      <h2>Les derniers posts Facebook</h2>
+    </div>
+
+    <div class="facebook-feed-frame">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61559093524449&tabs=timeline&width=900&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="100%"
+        height="500"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        title="Derniers posts Facebook de La Rhônelle">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="visit container">
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=2+Av.+de+Verdun,+59300+Valenciennes,+France&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Emplacement de La Rhônelle">
+      </iframe>
+    </div>
+    <div class="visit-details">
+      <p class="eyebrow">Nous trouver</p>
+      <h2>Au cœur de Valenciennes</h2>
+      <ul>
+        <li><strong>Adresse :</strong> 2 Av. de Verdun, 59300 Valenciennes, France</li>
+        <li><strong>Tel :</strong> 03 27 23 80 70</li>
+      </ul>
+      <div class="facebook-card">
+        <a class="facebook-link-inline" href="https://www.facebook.com/p/La-Rh%C3%B4nelle-61559093524449/" target="_blank" rel="noopener noreferrer" aria-label="Facebook La Rhônelle">
+          <img src="/images/facebook-logo.svg" alt="Logo Facebook" />
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  const dots = Array.from(document.querySelectorAll('.dot'));
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  if (slides.length && dots.length) {
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('active', slideIndex === currentIndex);
+      });
+
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === currentIndex);
+        dot.setAttribute('aria-current', dotIndex === currentIndex ? 'true' : 'false');
+      });
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+    nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+    dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+    setInterval(() => showSlide(currentIndex + 1), 4000);
+  }
+</script>
+
+<%- include('../partials/footer') %>

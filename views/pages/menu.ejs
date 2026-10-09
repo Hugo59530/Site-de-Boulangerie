@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+<main class="container">
+  <h1>Le Menu</h1>
+  <p>Nos produits</p>
+  <ul class="menu-list">
+    <% if (products && products.length) { %>
+      <% products.forEach(p => { %>
+        <li>
+          <strong><%= p.name %></strong> — <%= p.desc %> <span class="price">€<%= p.price %></span>
+        </li>
+      <% }) %>
+    <% } else { %>
+      <li>Aucun produit trouvé.</li>
+    <% } %>
+  </ul>
+</main>
+<%- include('../partials/footer') %>

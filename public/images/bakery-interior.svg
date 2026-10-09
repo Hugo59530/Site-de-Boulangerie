@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="#f7f1ea"/>
+  <rect x="70" y="90" width="760" height="440" rx="30" fill="#f9f5f2"/>
+  <rect x="120" y="150" width="270" height="250" rx="18" fill="#efe3d4"/>
+  <rect x="420" y="150" width="360" height="250" rx="18" fill="#fffdfb"/>
+  <rect x="440" y="170" width="320" height="210" rx="14" fill="#efc28b" opacity="0.7"/>
+  <path d="M177 316c0-72 51-130 114-130s114 58 114 130v40h-228z" fill="#d48f4f" opacity="0.9"/>
+  <path d="M500 260c0-58 47-105 105-105s105 47 105 105v55H500z" fill="#f4d9a7" opacity="0.9"/>
+  <rect x="180" y="360" width="180" height="24" rx="12" fill="#d0a274"/>
+  <rect x="510" y="360" width="170" height="24" rx="12" fill="#d0a274"/>
+  <rect x="100" y="440" width="700" height="30" rx="15" fill="#d39b62" opacity="0.4"/>
+  <text x="150" y="515" font-size="36" font-family="Georgia, serif" fill="#484b52">Une boulangerie de quartier</text>
+</svg>
